@@ -1,0 +1,34 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  coding-standard:
+    name: PHP_CodeSniffer
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./.github/actions/setup-php
+
+      - name: Execute PHP_CodeSniffer
+        run: composer cs-check
+
+  static-analysis:
+    name: Larastan
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./.github/actions/setup-php
+
+      - name: Run larastan
+        run: composer stan
