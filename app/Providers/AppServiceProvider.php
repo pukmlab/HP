@@ -9,9 +9,10 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
+
     public function register(): void
     {
-        //
+        //hoge
     }
 
     /**
@@ -19,6 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //hoge
     }
 }
