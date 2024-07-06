@@ -18,7 +18,6 @@
     <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing" />
     <rule ref="Generic.WhiteSpace.LanguageConstructSpacing" />
     <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter" />
-    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
 
 
     <!-- 除外ディレクトリ -->
